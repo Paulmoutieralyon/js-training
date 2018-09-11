@@ -8,6 +8,35 @@
  */
 
 // Your code :
+function sameSign (a,b)
+{
+	let signeDeA ;
+	let signeDeB ;
+
+	if (a > 0){
+		signeDeA = "+";
+	}
+	else if (a === 0) {
+		signeDeA = "0";
+	} else {
+		signeDeA = "-";
+	}
+	if (b > 0){
+		signeDeB = "+";
+	}
+	else if (b === 0) {
+		signeDeB = "0";
+	} else {
+		signeDeB = "-";
+	}
+
+	
+
+	return signeDeA === signeDeB ;
+
+	
+}
+
 
 //* Begin of tests
 const assert = require('assert')

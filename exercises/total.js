@@ -6,6 +6,15 @@
  *
  */
 
+//* your secteur
+
+function total(tab) {
+	let total = 0;
+	for (let i = tab.length - 1; i >= 0; i--) {
+		total += tab[i];
+	}
+	return total
+}
 
 //* Begin of tests
 const assert = require('assert')
