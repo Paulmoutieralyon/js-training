@@ -12,9 +12,19 @@
  *
  */
 
-
+function keepFirst(str){
+	return str.slice(0,2);
+}
+function keepLast(str){
+	return str.slice(str.length-2);
+}
+function keepFirstLast(str){
+	return str.slice(2,4);
+}
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(keepFirst('abcde'), 'ab')
+assert.strictEqual(keepLast('abcde'), 'de')
+assert.strictEqual(keepFirstLast('abcde'), 'cd')
 // End of tests */

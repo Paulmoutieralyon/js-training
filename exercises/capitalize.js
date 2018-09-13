@@ -6,7 +6,14 @@
  * and in lowercase for the rest of the string
  *
  */
-
+fonction  capitaliser ( str ) {
+	let str2 = " " ;
+	str2 + = str [ 0 ]. toUpperCase ();
+	pour ( laisser i = 1 ; i < str . longueur ; i ++ ) {
+		str2 + = str [i]. toLowerCase ()
+	}
+	retourne str2;
+}
 
 //* Begin of tests
 const assert = require('assert')

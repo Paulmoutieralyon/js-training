@@ -8,6 +8,14 @@
  *
  */
 
+// Your code : 
+function repeat(str, a){
+	let str2="";
+	for(let i=0;i<a;i++){
+		str2+=str
+	}
+	return str2;
+}
 //* Begin of tests
 const assert = require('assert')
 

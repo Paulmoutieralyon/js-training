@@ -7,9 +7,20 @@
  *
  */
 
+function whisper(str){
+	let newStr="*";
+	for(let i=0;i<str.length;i++){
+		newStr+=str[i].toLowerCase();
+	}
+	newStr+="*";
+	return newStr;
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(whisper("TEST"), "*test*")
+assert.strictEqual(whisper("testagain"), "*testagain*")
+assert.strictEqual(whisper("tEsTencORe"), "*testencore*")
+assert.strictEqual(whisper(""), "**")
 // End of tests */

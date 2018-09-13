@@ -10,6 +10,28 @@
  */
 
 // Your code :
+let factor=0;
+let factor2=0;
+const multiply = function(a,b){
+    if(a===0 || b===0) return 0
+    factor=factor+a;
+    if(b>1){
+        b--;
+        return multiply(a,b)
+    }
+    else if(b<-1){
+        b++;
+        return multiply(a,b)
+    }
+    else{
+        factor2=factor;
+        if(Math.sign(b)==-1){
+            factor2=-factor;
+        }
+        factor=0;
+        return factor2;
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
